@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>donations</title>
+	  
+	<link rel="stylesheet" href="style.css">
+	 
+	<script>
+	validateEmail();
+	
+		var name1 = document.getElementByID("#namefield").value;
+		var name2 = document.getElementById("#emailfield").value;
+		var name3 = document.getElementById("#homefield").value;
+		var name4 = document.getElementById("#donatefield").value;
+		var name5 = document.getElementById("#cardfield").value;
+		
+		function giveBackDetails(){
+		
+			alert("Your Name "+ name1 + " Your Email " + name2 + " Your Address " + name3 + " Your Donation " + name4 + " Card Number "+ name5+ );
+            
+		
+		}
+		
+		
+		
+	</script>
+    <link rel="text" href="javascript.js">
+</head>
+<body>
+
+
+
+
+    <ul>
+        <li class="active"><a href="index.html">Home</a></li></li>
+        <li ><a href="form.html">Form</a></li>
+        <li ><a href="game.html">Game</a></li>
+    </ul>
+
+
+	<div id="header-div">
+	<h1> DONATIONS </h1>
+
+	</div>
+	<div id="main-div">
+	<div id="form-title">
+	<h1>details</h1>
+	
+	</div>
+	
+	
+	<div id="form-div">
+	<form>
+	<label> enter full name</label>
+	<input type="text" placeholder="Enter Your full Name Here" required minlength="5" maxlength="40" size="20" id="namefield">
+	<br>
+	<br>
+	<label id="labelemail"> enter email address</label>
+	<input type="email" placeholder="Enter Your email Here"  onblur="validateEmail(this)"	required minlength="5" maxlength="40" size="20" id="emailfield">
+	<br>
+	<br>
+	<label id="labelhome"> enter home address</label>
+	<input type="text" placeholder="Enter Your home address here" required minlength="5" maxlength="40" size="25" id="homefield">
+	<br>
+	<br>
+	<label id="labeldonate"> enter amount you want to donate</label> 
+	<input type="text" placeholder="Enter donation amount" required minlength="1" maxlength="20" size="20" id="donatefield">
+	<br>
+	<br>
+	<label id="labeldonate"> enter your card number</label> 
+	<input type="text" placeholder="Enter card number" required minlength="5" maxlength="20" size="20" id="cardfield">
+	<br>
+	<br>
+	<label>i agree to the T&C </label>	
+	<input type="checkbox">
+		
+		
+		<br>
+		<input type="submit" value="submit details" onclick=" giveBackDetails()">
+		
+		</form>
+		
+		
+		</div>
+	</div><!--end of form-->
+	</div><!--end of main div-->
+</body>
+</html>
